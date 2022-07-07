@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale-1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Track List</title>
+        <script src="https://kit.fontawesome.com/8eaa906cb7.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="./bootstrap.css">
+    </head>
+    <body>
+        <div class="container mt-4">
+            <h1 class="display-4 text-center"></i> My Irrational <span class="text-danger">Thoughts</span> <i class="fas fa-archive"></i></h1>
+            <form id="thought-form">
+                <div class="form-group">
+                    <label for="thought">What happened today:</label>
+                    <input type="text" id="thought" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="what-else">What Else?</label>
+                    <input type="text" id="what-else" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="all-out">Let it all out.</label>
+                    <input type="text" id="all-out" class="form-control">
+                </div>
+
+                <input type="submit" value="Add thought" class="btn btn-primary btn-block mt-3">
+            </form>
+            <table class="table table-striped mt-5">
+                <thead>
+                    <tr>
+                        <th>1</th>
+                        <th>2</th>
+                        <th>3</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="thought-list"></tbody>
+            </table>
+        </div>
+    
+        <script src="app.js"></script>
+    </body>
+</html>
